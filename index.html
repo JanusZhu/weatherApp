@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="content">
+      <div class="header">
+        <img src="https://img.icons8.com/nolan/64/apple-weather.png" />
+        <h1>Weather App</h1>
+      </div>
+      <div class="main">
+        <div class="searchBar">
+          <button class="switch">°C</button>
+          <form action="">
+            <input
+              type="text"
+              id="city"
+              placeholder="Enter city name here"
+            /><button class="search">
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/null/search--v1.png"
+              />
+            </button>
+          </form>
+        </div>
+        <div id="errorMessage"></div>
+        <div id="card">
+          <div class="name">
+            <div id="cityName"></div>
+            <div id="CountryName"></div>
+          </div>
+          <div id="description"></div>
+
+          <div class="temp">
+            &nbsp
+            <div id="temperature"></div>
+          </div>
+          <div class="minMax">
+            <div id="minTemp"></div>
+            &nbsp
+            <div id="maxTemp"></div>
+          </div>
+          <div class="feels">
+            <p>Feels like:&nbsp</p>
+            <div id="feelsLike"></div>
+          </div>
+          <div class="hum">
+            <p>Humidity:&nbsp</p>
+            <div id="humidity"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        Copyrights© JanusZhu |
+        <a href="https://github.com/JanusZhu/weatherApp">Source Code</a>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
