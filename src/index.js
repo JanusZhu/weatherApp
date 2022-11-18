@@ -20,11 +20,13 @@ searchBtn.addEventListener("click", () => {
 });
 
 switchBtn.addEventListener("click", () => {
-  if (switchBtn.textContent === "C") {
-    switchBtn.textContent = "F";
+  if (switchBtn.textContent === "°C") {
+    switchBtn.textContent = "°F";
   } else {
-    switchBtn.textContent = "C";
+    switchBtn.textContent = "°C";
   }
   weather.changeUnit();
-  view.loadData(weather.getWeatherData(searchInput.value || "Seoul"));
+  view.loadData(
+    weather.getWeatherData(document.querySelector("#cityName").textContent)
+  );
 });
